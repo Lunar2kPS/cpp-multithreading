@@ -1,0 +1,3 @@
+[submodule "cmake-cpp-scripts"]
+	path = cmake-cpp-scripts
+	url = https://github.com/CometCarlos/cmake-cpp-scripts
