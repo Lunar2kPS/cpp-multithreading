@@ -21,6 +21,15 @@ int main() {
         []() { return testLongMethod(); }
     );
 
+    for (int i = 0; i < 10; i++) {
+        cout << ".";
+        this_thread::sleep_for(chrono::milliseconds(300));
+        if (task._Is_ready()) {
+            cout << "    DONE!" << endl;
+            break;
+        }
+    }
+
     string input;
     getline(cin, input);
 
